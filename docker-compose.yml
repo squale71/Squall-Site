@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  squallsite:
+    image: ${DOCKER_REGISTRY-}squallsite
+    build:
+      context: .
+      dockerfile: Squallsite/Dockerfile
